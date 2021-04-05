@@ -1,0 +1,7 @@
+name: Amogus
+version: ${project.version}
+main: io.github.sxigames.amogus.Amogus
+api-version: 1.16
+authors: [ Sxigames ]
+description: AMOGUS
+depend: [ SkinsRestorer, ProtocolLib ]
