@@ -37,6 +37,9 @@ public class InteractEvent implements Listener {
                     if (Bukkit.getOnlinePlayers().size() >= 4) {
                         plugin.getConfig().set("inPartida", true);
                         plugin.saveConfig();
+                        for (Player p : Bukkit.getOnlinePlayers()) {
+                            p.getInventory().clear();
+                        }
                     } else {
                         e.getPlayer().sendMessage("Não há players suficientes");
                     }
