@@ -9,7 +9,6 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        build(wait: true, job: 'canvas')
         sh 'mvn clean package'
       }
     }
