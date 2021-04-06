@@ -33,11 +33,11 @@ public class InteractEvent implements Listener {
                 if (Objects.requireNonNull(e.getPlayer().getInventory().getItemInMainHand()).getItemMeta().getDisplayName().equals("Iniciar")) {
                     System.out.println("Iniciar");
                     if (Bukkit.getOnlinePlayers().size() >= 4) {
-                        plugin.getConfig().set("inPartida", true);
-                        plugin.saveConfig();
                         for (Player p : Bukkit.getOnlinePlayers()) {
                             p.getInventory().clear();
                         }
+                        plugin.getConfig().set("inPartida", true);
+                        plugin.saveConfig();
                     } else {
                         e.getPlayer().sendMessage("Não há players suficientes");
                     }
