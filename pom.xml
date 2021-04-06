@@ -58,6 +58,7 @@
                 <filtering>true</filtering>
             </resource>
         </resources>
+        <finalName>Amogus</finalName>
     </build>
 
     <repositories>
