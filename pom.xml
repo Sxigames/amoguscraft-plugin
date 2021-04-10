@@ -42,7 +42,7 @@
                             <artifactSet>
                                 <excludes>
                                     <exclude>net.skinsrestorer:skinsrestorer</exclude>
-                                    <exclude>com.destroystokyo.paper:paper-api</exclude>
+                                    <exclude>org.yatopiamc:yatopia-api</exclude>
                                     <exclude>com.comphenix.protocol:ProtocolLib</exclude>
                                 </excludes>
                             </artifactSet>
@@ -62,17 +62,14 @@
     </build>
 
     <repositories>
-        <repository>
-            <id>papermc-repo</id>
-            <url>https://papermc.io/repo/repository/maven-public/</url>
-        </repository>
+
         <repository>
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
         <repository>
-            <id>codemc-snapshots</id>
-            <url>https://repo.codemc.org/repository/maven-snapshots/</url>
+            <id>codemc-repo</id>
+            <url>https://repo.codemc.io/repository/maven-public/</url>
         </repository>
         <repository>
             <id>dmulloy2-repo</id>
@@ -82,8 +79,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.destroystokyo.paper</groupId>
-            <artifactId>paper-api</artifactId>
+            <groupId>org.yatopiamc</groupId>
+            <artifactId>yatopia-api</artifactId>
             <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
