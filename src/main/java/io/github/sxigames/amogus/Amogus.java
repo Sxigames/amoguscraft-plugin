@@ -5,6 +5,7 @@ import com.comphenix.protocol.ProtocolLibrary;
 import com.comphenix.protocol.ProtocolManager;
 import io.github.sxigames.amogus.Eventos.InteractEvent;
 import io.github.sxigames.amogus.Eventos.JoinEvent;
+import io.github.sxigames.amogus.Eventos.QuitEvent;
 import io.github.sxigames.amogus.Loops.AllLoop;
 import io.github.sxigames.amogus.Loops.HostLoop;
 import net.skinsrestorer.api.SkinsRestorerAPI;
@@ -32,6 +33,7 @@ public final class Amogus extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new InteractEvent(), this);
         Bukkit.getPluginManager().registerEvents(new MenuFunctionListener(), this);
         Bukkit.getPluginManager().registerEvents(new JoinEvent(), this);
+        Bukkit.getPluginManager().registerEvents(new QuitEvent(), this);
         Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new HostLoop(), 0L, 0L);
         Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new AllLoop(), 0L, 0L);
     }
