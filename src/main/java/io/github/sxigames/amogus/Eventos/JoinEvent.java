@@ -4,6 +4,7 @@ package io.github.sxigames.amogus.Eventos;
 import io.github.sxigames.amogus.Amogus;
 import io.github.sxigames.amogus.Utils;
 import org.bukkit.Bukkit;
+import org.bukkit.Location;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -27,6 +28,7 @@ public class JoinEvent implements Listener {
         String aa = livres.toArray()[rand.nextInt(livres.size())].toString();
         Utils.SetCor(e.getPlayer(), aa);
         Utils.setHost(e.getPlayer(), false);
+        e.getPlayer().teleport(new Location(e.getPlayer().getWorld(), rand.nextInt(10-6) + 6, 64 ,-1));
     }
 
     @EventHandler
