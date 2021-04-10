@@ -21,6 +21,6 @@ public class JoinEvent implements Listener {
         String aa = livres.toArray()[rand.nextInt(livres.size())].toString();
         Utils.SetCor(e.getPlayer(), aa);
         Utils.setHost(e.getPlayer(), false);
-        e.getPlayer().teleport(new Location(e.getPlayer().getWorld(), rand.nextInt(10-6) + 6, 64 ,-1));
+        e.getPlayer().teleport(new Location(e.getPlayer().getWorld(), rand.nextInt(10-6) + 6.5, 64 ,-1.5));
     }
 }
