@@ -93,7 +93,7 @@
         <dependency>
             <groupId>net.skinsrestorer</groupId>
             <artifactId>skinsrestorer</artifactId>
-            <version>14.0.2</version>
+            <version>14.1.1</version>
         </dependency>
         <dependency>
             <groupId>com.comphenix.protocol</groupId>
